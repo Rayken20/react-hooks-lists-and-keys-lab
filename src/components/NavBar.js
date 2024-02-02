@@ -4,7 +4,7 @@ function NavBar() {
   const links = ["home", "about", "projects"];
 
   const anchors = links.map((link) => (
-    <a key={link} href={"#" + link}>
+    <a key={links.linkage} href={"#" + link}>
       {link}
     </a>
   ));
