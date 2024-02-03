@@ -3,8 +3,8 @@ import React from "react";
 function NavBar() {
   const links = ["home", "about", "projects"];
 
-  const anchors = links.map((link) => (
-    <a key={links} href={"#" + link}>
+  const anchors = links.map((link, index) => (
+    <a key={index} href={"#" + link}>
       {link}
     </a>
   ));
